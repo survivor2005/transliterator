@@ -1,0 +1,68 @@
+@import "./style_lib/reset.css";
+@import "./style_lib/mixins.scss";
+@import "./style_lib/master.scss";
+
+// --------------general styles-----------
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--color-five);
+}
+
+.wrapper{
+    min-width: var(--min-width);
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+a,
+ul,
+li,
+b,
+div,
+form,
+textarea,
+strong,
+span,
+em,
+label,
+input,
+option,
+select,
+button,
+legend,
+table 
+{
+    font-size: var(--font-size-default);
+    font-family: var(--font-family-default);
+    letter-spacing: 0.04em;
+}
+
+
+.main {
+    padding: 40px var(--gap-horizont);
+}
+
+@media (max-width: 980px) {
+    .main {
+        padding: 40px var(--tab-gap-horizont);
+    }
+}
+
+
+
+
+@import "./../templates/main/main.scss";
+
+// @import "./../templates/footer/footer.scss";
+
+

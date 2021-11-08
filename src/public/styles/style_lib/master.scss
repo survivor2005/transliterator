@@ -1,0 +1,66 @@
+// @font-face {
+//     font-family:'ubuntu'; /* Имя шрифта */
+//     src: url("/fonts/ubuntu.ttf"); /* Путь к файлу со шрифтом */
+//    }
+:root {
+    --font-family-default: sans-serif;
+}
+
+
+
+
+//шрифты  размер
+:root {
+    --font-size-default: 1rem; //16px
+    --font-size-smaller: 0.8125rem; //13px
+    --font-size-small: 0.875rem; //14px
+    --font-size-big: 1.5rem; //24px
+    --font-size-biggest: 2rem; //32px
+}
+
+
+
+//отступы и размеры
+:root {
+    --min-width: 30px;
+    --max-width: 1400px;
+    --gap-horizont: 30px;
+    --tab-gap-horizont: 10px;
+}
+
+
+
+
+
+//цвета заливки
+:root {
+    --color-gradient-one: linear-gradient(to top, rgb(23, 129, 80), rgb(4, 165, 111));
+    --color-gradient-two: linear-gradient(to bottom, rgb(23, 129, 80), rgb(4, 165, 111));
+    --color-two: rgb(200, 200, 200);
+    --color-three:  rgb(1, 102, 55);
+    --color-four: rgb(238, 238, 238);
+    --color-five: white;
+    --color-six: rgb(126, 45, 92);
+    // $color-six: orange;
+}
+
+
+
+
+//цвета шрифта
+:root {
+    --color-font-one: white;
+    --color-font-two: rgb(158, 158, 158);
+}
+
+
+
+
+//тени
+:root {
+    --box-shadow-one: 0px 0px 5px rgba(0, 0, 0, 0.3),
+        0px 6px 5px rgba(0, 0, 0, 0.3);
+    --box-shadow-two: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    --box-shadow-three: 0 2px 6px rgb(238, 238, 238);
+    --box-shadow-four: 0 4px 12px rgb(219, 218, 218);
+}

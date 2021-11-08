@@ -1,0 +1,63 @@
+@mixin paragraph($fs:$font-size-one, 
+$fw:normal,
+$lh:auto) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+@content;
+
+}
+@mixin structure-wrap($margin:auto, $bgc:auto, $padding:$gap-vertical $gap-horizont){
+    max-width: $max-width-wrap; 
+    margin:$margin;
+    padding: $padding;
+    background-color: $bgc;
+    box-sizing: border-box;
+@content;
+}   
+
+@mixin structure($margin:auto, $width:$max-width, $padding:$gap-vertical $gap-horizont, $box-sizing:auto) {
+    max-width: $width;
+    margin: $margin;
+    box-sizing: $box-sizing;
+    padding: $padding;
+    @content;
+}
+
+@mixin  btn(
+        $padding: 9px 4%,
+        $border-radius: 3px,
+        ){
+    padding: $padding;
+    border: none;
+    border-radius: $border-radius;
+    background: var(--color-gradient-one);
+    color: white;
+    text-align: center;
+    &:hover {
+        background: var(--color-gradient-two);
+    }
+    &:active {
+        background: var(--color-gradient-one);
+    }
+    @content;
+}
+
+@mixin title-bar {
+    background: var(--color-gradient-one);
+    padding: 15px 10px;
+    font-weight: bold;
+    @content;
+}
+
+@mixin input ($border-color: var(--color-two),
+ $border-color-focus: var(--color-six)) {
+    border: 1px solid $border-color;
+    padding: 10px;
+    border-radius: 3px;
+    width: 100%;
+    &:focus {
+        border-color: $border-color-focus;
+    }
+    @content;
+}
